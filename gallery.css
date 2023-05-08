@@ -1,0 +1,127 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: rgb(208, 251, 66);
+    text-align: center;
+    font-family: 'Titan One';
+    font-weight: 700;
+    font-size: 75pt;
+    margin-top: 30px;
+    text-shadow: 4px 4px 4px violet;
+}
+
+.globe {
+    margin-top: 25px;
+    padding-left: 20px;
+}
+
+
+@keyframes earth-rotation {
+    from {
+        background-position: 0px 0px;
+    }
+    to {
+        background-position: 610px 0px;
+    }
+}
+
+#earth{
+    width: 250px;
+    height: 250px;
+    background: url(imgs/Political-World-Map.jpg);
+    border-radius: 50%;
+    background-size: 610px;
+    box-shadow: inset 8px 36px 80px 36px rgba(0, 0, 0, 0.611), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+    animation-name: earth-rotation;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.stack {
+    width: 85%;
+    max-width: 400px;
+    transition: .25s ease; 
+}
+
+.stack :hover {
+    transform: rotate(5deg);
+}
+
+.stack :before {
+    transform: translateY(-2%) rotate(-4deg);
+}
+
+.stack :after {
+    transform: translateY(2%) rotate(4deg);
+}
+
+.card {
+	aspect-ratio: 3 / 2;
+	border: 4px solid;
+	background-color: #FFF;
+	position: relative;
+	transition: .15s ease;
+	cursor: pointer;
+	padding: 5% 5% 15% 5%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.card:before, .card:after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	border: 4px solid;
+	background-color: #ffffff;
+	transform-origin: center center;
+	z-index: -1;
+	transition: .15s ease;
+	top: 0;
+	left: 0;
+}
+
+.card:before {
+	transform: translatey(-2%) rotate(-6deg);
+}
+	
+.card:after {
+	transform: translatey(2%) rotate(6deg);
+}
+
+.image {
+	width: 100%;
+	border: 4px solid;
+	background-color: #EEE;
+	aspect-ratio: 1 / 1;
+	position: relative;
+}
+
+.wrap {
+    display: flex;
+}
+
+.album {
+    margin-left: 40px;
+}
+
+.timestamp {
+    font-size: 1.8rem;
+    text-align: center;
+    line-height: 2em;
+    font-family: 'Covered By Your Grace';
+    margin-bottom: -3%;
+}
+
+.image img {
+    display: block;
+    width: 300px;
+}
