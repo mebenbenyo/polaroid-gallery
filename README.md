@@ -1,7 +1,8 @@
 # Simple Polaroid Gallery (Ongoing Project)
 This is an ongoing project that aims to create a feature-rich polaroid gallery using HTML, CSS, JavaScript, PHP, and a spinning globe animation. The current version provides a basic gallery layout and spinning globe animation, with planned future enhancements including an upload function and additional features.
 
-![image](https://github.com/mebenbenyo/polaroid-gallery/assets/117006580/1583ff26-41d5-4dcc-a0ff-c6e6393db1c5) 
+![image](https://github.com/mebenbenyo/polaroid-gallery/assets/117006580/76604064-e374-4b13-bf29-d7d227b54747)
+
 
 ## Features
 
